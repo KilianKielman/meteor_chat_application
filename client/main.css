@@ -1,0 +1,14 @@
+/*Display the input on its own line*/
+#text{
+ display: block;
+}
+/*Allow each message to have a background color and space*/
+.chat{
+ padding: 10px;
+ margin-top: 5px;
+ background-color: rgba(201,4,5,.3)
+}
+/*Change the background color if it's your message*/
+.you{
+ background-color: rgba(2,204,35,.3)
+}

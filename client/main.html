@@ -1,0 +1,17 @@
+<head>
+ <title>NYCDA Chat</title>
+</head>
+<body> 
+  <h1>New York Code and Design Academy Chat</h1>
+  {{> loginButtons align="left"}}<br>
+  <input id="text">
+  {{#each chats}}
+    {{> nycda_chat}}
+  {{/each}}
+</body>
+
+<template name="nycda_chat">
+ <div class="chat {{#if currentUser}} you {{/if}}">
+   <strong>{{owner}}</strong> || {{message}}<br>
+ </div>
+</template>
